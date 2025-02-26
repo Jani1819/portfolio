@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styling */
+body {
+  background-color: rgba(0, 0, 0, 0.5); /* ✅ Transparent black for better image visibility */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* Optional: Ensure Image Visibility */
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.4); /* ✅ Light transparent black */
+}
