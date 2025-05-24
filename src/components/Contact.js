@@ -1,47 +1,94 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Contact = ({ contactRef }) => {
   return (
-    <section ref={contactRef} id="contact" className="p-10 bg-gradient-to-r from-gray-800/40 text-white text-center">
+    <section 
+      id="contact" 
+      ref={contactRef}
+      className="p-8 bg-gray-800/40"
+    >
       <motion.h2 
-        className="text-4xl font-bold mb-6"
-        initial={{ opacity: 0, y: -50 }}
+        className="text-3xl font-bold text-center mb-8 text-white"
+        initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
       >
         Contact Me
       </motion.h2>
-      
-      <motion.div 
-        className="max-w-md mx-auto bg-white bg-opacity-10 p-6 rounded-lg shadow-lg backdrop-blur-md"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <form>
-          <input type="text" placeholder="Your Name" className="w-full p-2 mb-4 rounded-md bg-gray-800 text-white" />
-          <input type="email" placeholder="Your Email" className="w-full p-2 mb-4 rounded-md bg-gray-800 text-white" />
-          <textarea placeholder="Your Message" className="w-full p-2 mb-4 rounded-md bg-gray-800 text-white"></textarea>
-          <motion.button 
-            className="w-full bg-blue-500 hover:bg-blue-600 p-2 rounded-md text-white font-semibold"
-            whileHover={{ scale: 1.1 }}
-          >
-            Send Message
-          </motion.button>
-        </form>
-      </motion.div>
 
       <motion.div 
-        className="mt-6 flex justify-center space-x-6"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        className="max-w-4xl mx-auto bg-gray-900 p-8 rounded-lg shadow-xl"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <a href="mailto:janibasha18012001@gmail.com" className="text-blue-400 text-3xl hover:text-blue-500"><FaEnvelope /></a>
-        <a href="tel:+919391552485" className="text-green-400 text-3xl hover:text-green-500"><FaPhone /></a>
-        <a href="https://www.linkedin.com/in/jani-basha-shaik-64798a208/" target="_blank" rel="noopener noreferrer" className="text-blue-600 text-3xl hover:text-blue-700"><FaLinkedin /></a>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Contact Information */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h3 className="text-xl font-semibold mb-4 text-white">Get in Touch</h3>
+            <div className="space-y-4 text-gray-300">
+              <p>
+                <strong className="text-blue-400">Email:</strong>
+                <br />
+                <a href="mailto:janibasha1819@gmail.com" className="hover:text-blue-400 transition-colors">
+                  janibasha1819@gmail.com
+                </a>
+              </p>
+              <p>
+                <strong className="text-blue-400">Phone:</strong>
+                <br />
+                <a href="tel:+919392454647" className="hover:text-blue-400 transition-colors">
+                  +91 9392454647
+                </a>
+              </p>
+              <p>
+                <strong className="text-blue-400">Location:</strong>
+                <br />
+                Hyderabad, Telangana, India
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Social Links */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h3 className="text-xl font-semibold mb-4 text-white">Connect With Me</h3>
+            <div className="space-y-4 text-gray-300">
+              <p>
+                <strong className="text-blue-400">LinkedIn:</strong>
+                <br />
+                <a 
+                  href="https://www.linkedin.com/in/shaik-jani-basha-a3b982200/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition-colors"
+                >
+                  Shaik Jani Basha
+                </a>
+              </p>
+              <p>
+                <strong className="text-blue-400">GitHub:</strong>
+                <br />
+                <a 
+                  href="https://github.com/Jani1819" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition-colors"
+                >
+                  Jani1819
+                </a>
+              </p>
+            </div>
+          </motion.div>
+        </div>
       </motion.div>
     </section>
   );
