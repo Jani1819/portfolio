@@ -11,10 +11,11 @@ const Home = ({ contactRef }) => {
   return (
     <section 
       id="home" 
-      className="h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-black text-white"
+      className="h-screen flex items-center justify-center bg-gray-800/40 relative"
     >
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black opacity-80 z-0"></div>
       <motion.div 
-        className="text-center"
+        className="text-center relative z-10 text-white"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -36,8 +37,9 @@ const Home = ({ contactRef }) => {
           Electrical & Electronics Engineer | AI & Embedded Systems
         </motion.p>
         <motion.button 
-          className="mt-4 inline-block bg-blue-500 px-6 py-2 rounded-lg text-white font-semibold hover:bg-blue-600"
+          className="mt-8 inline-block bg-blue-600 px-6 py-3 rounded-lg text-white font-semibold hover:bg-blue-700 transition duration-300 shadow-md"
           whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
           onClick={scrollToContact}
         >
           Contact Me

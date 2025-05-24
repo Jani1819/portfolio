@@ -8,7 +8,7 @@ module.exports = {
         dark: "#111827",
       },
       backgroundImage: {
-        'hero-bg': "url('../public/image.png')", // 🔹 Corrected Path
+        'hero-bg': "url('/image.png')", // Updated path for better compatibility
       },
     },
   },

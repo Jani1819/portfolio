@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "A portfolio website built with React and Tailwind CSS.",
-  "homepage": "https://jani1819.github.io/portfolio",
+  "homepage": "https://Jani1819.github.io/portfolio",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
@@ -17,8 +17,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^12.4.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^5.4.0",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
