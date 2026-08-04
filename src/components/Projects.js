@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
+      title: "Indoor Navigation Drone System",
+      description: "Developed a GPS-denied autonomous drone using 3D LiDAR, FAST-LIO, ROS 2, and NVIDIA Jetson for real-time mapping and navigation. Successfully tested inside NLC thermal power plant boilers for industrial inspection.",
+      technologies: "ROS 2 • FAST-LIO • RTAB-Map • 3D LiDAR • NVIDIA Jetson • PX4 • Gazebo • Visual SLAM",
+      link: "https://github.com/Jani1819/Indoor-Navigation-Drone"
+  
+    },
+    {
       title: "AI-Driven Edge Computing",
       description: "Developed a real-time person detection system using YOLO models and edge computing for drones.",
       link: "https://github.com/Jani1819/Person_Detection-From-Drone"
@@ -11,22 +18,11 @@ const Projects = () => {
     {
       title: "Leader-Follower Drone System",
       description: "Integrated Firebase to synchronize multiple drones for autonomous navigation in defense applications.",
-    },
-    {
-      title: "Heavy Payload Drone",
-      description: "Designed India's first 60-100kg payload drone, optimizing stability and waypoint navigation.",
-    },
-    {
-      title: "Embedded Systems & AUTOSAR",
-      description: "Worked on Advanced Driver Assistance Systems (ADAS) at KPIT Technologies using Embedded C.",
+      link: "https://github.com/Jani1819/Leader-and-Follower-Drone"
     },
     {
       title: "Full-Stack Web Application",
       description: "Developed a real-time control interface for autonomous drones using Python, HTML, CSS, and Firebase.",
-    },
-    {
-      title: "AI-Based Path Planning",
-      description: "Implemented machine learning algorithms for dynamic path planning in autonomous defense vehicles.",
     },
   ];
 
